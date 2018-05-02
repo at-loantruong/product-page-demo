@@ -116,5 +116,10 @@ function displayShoppingCartItems() {
     htmlString += "</tr>"; 
     $("#table-products > tbody").append(htmlString);
     $("#topActionCartNumber").append(count);
-  }   
+  }
+  if(shoppingItems.length == 0){
+    $("#table-products").css("display", "none");
+    var htmlString = "Your cart is currently empty.";
+    $("#empty-cart").append(htmlString);
+  }
 }
