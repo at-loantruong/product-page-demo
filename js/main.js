@@ -119,6 +119,7 @@ function displayShoppingCartItems() {
   }
   if(shoppingItems.length == 0){
     $("#table-products").css("display", "none");
+    $(".group-bottom").css("display", "none");
     var htmlString = "Your cart is currently empty.";
     $("#empty-cart").append(htmlString);
   }
