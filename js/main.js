@@ -77,7 +77,7 @@ function removeItem(buttonId){
   if( retVal == true ){
   var id = $(buttonId).attr("id");
   for(var i = 0; i < shoppingCartItems.length; i++) {
-    if(shoppingCartItems[i].id === id) {
+    if(shoppingCartItems[i].id == id) {
       shoppingCartItems.splice(i, 1);
     }
   }
