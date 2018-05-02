@@ -1,0 +1,18 @@
+
+button, .btn {
+  text-transform: uppercase;
+  color: $white-color;
+  background: $primary-color;
+  &:hover{
+  	color: $white-color ! important;
+  }
+}
+.btn--primary{
+  border: 1px solid $primary-color ! important;
+  color: $primary-color ! important;
+  background-color: $white-color;
+  &:hover {
+    color: $white-color;
+    background-color: $primary-color;
+  }
+}

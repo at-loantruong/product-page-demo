@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  border: 1px solid $border-color;
+}
+thead th, tbody td{
+	padding: 15px;
+	border-bottom: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  font-size: $base-font-size;
+}
+th {
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-color;
+  background-color: $primary-color;
+}
+td {
+  color: $second-color;
+}

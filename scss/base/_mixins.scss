@@ -1,0 +1,49 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin box-shadow($horizonta, $vertical, $blur-radius, $spread-radius, $color) {
+  box-shadow: $horizonta $vertical $blur-radius $spread-radius $color;
+  -webkit-box-shadow: $horizonta $vertical $blur-radius $spread-radius $color;
+  -moz-box-shadow: $horizonta $vertical $blur-radius $spread-radius $color;
+}
+@mixin transition($transition){
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+@mixin linx ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover ! important;   
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+@mixin set-position ($position, $top, $right, $bottom, $left) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: $position;
+}
+@mixin set-opacity($opacity){
+  -webkit-opacity: $opacity;
+  -moz-opacity: $opacity;
+  opacity: $opacity;
+}
+@mixin set-transform-scale($scale){
+  -webkit-transform: scale($scale, $scale);
+  -moz-transform: scale($scale, $scale);
+  -o-transform: scale($scale, $scale);
+  transform: scale($scale, $scale);
+}
