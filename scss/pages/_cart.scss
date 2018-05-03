@@ -1,28 +1,28 @@
-.cart{
+.cart {
   border: 0;
   background: transparent;
-  &:hover{
+  &:hover {
   	color: $primary-color ! important;
   }
-  i{
+  i {
   	font-size: 20px;
   }
 }
-.image{
+.image {
   width: 45%;
-	img{
+	img {
 		width: 15%;
 		padding-right: 15px;
 	}
 }
 .total-text {
   text-align: right;
-  background: #f7f7f7;
+  background: $total-text-bg;
 }
-.cart-buttons{
+.cart-buttons {
   margin-top: 30px;
   float: right;
-	li{
+	li {
 		display: inline-block;
 	}
 }

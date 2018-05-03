@@ -8,14 +8,14 @@
   -webkit-box-shadow: $horizonta $vertical $blur-radius $spread-radius $color;
   -moz-box-shadow: $horizonta $vertical $blur-radius $spread-radius $color;
 }
-@mixin transition($transition){
+@mixin transition($transition) {
   -webkit-transition: $transition;
   -moz-transition: $transition;
   -ms-transition: $transition;
   -o-transition: $transition;
   transition: $transition;
 }
-@mixin linx ($link, $visit, $hover, $active) {
+@mixin link($link, $visit, $hover, $active) {
   a {
     color: $link;
     &:visited {
@@ -29,19 +29,19 @@
     }
   }
 }
-@mixin set-position ($position, $top, $right, $bottom, $left) {
+@mixin set-position($position, $top, $right, $bottom, $left) {
   top: $top;
   right: $right;
   bottom: $bottom;
   left: $left;
   position: $position;
 }
-@mixin set-opacity($opacity){
+@mixin set-opacity($opacity) {
   -webkit-opacity: $opacity;
   -moz-opacity: $opacity;
   opacity: $opacity;
 }
-@mixin set-transform-scale($scale){
+@mixin set-transform-scale($scale) {
   -webkit-transform: scale($scale, $scale);
   -moz-transform: scale($scale, $scale);
   -o-transform: scale($scale, $scale);

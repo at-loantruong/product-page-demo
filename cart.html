@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <section class="top-header">
         <div class="top-header-wrapper">
           <div class="container">
             <div class="row">
-              <div class="left-area col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="left-area col-md-6">
                 <ul class="head-contact-info">
                   <li><i class="fa fa-phone-square"></i>+00386 40 000 111</li>
                   <li><i class="fa fa-envelope"></i>themes@webriti.com</li>
                 </ul>
               </div>
-              <div class="right-area pull-right col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="right-area pull-right col-md-6">
                 <ul class="unstyled">
                   <li class="ogin-account">                    
                     <span id="loginButton" class="dropdown-toggle" data-toggle="dropdown">
@@ -28,17 +28,16 @@
                       <a href="#" id="customer_login_link">Log in</a>
                     </span>                    
                     <div class="dropdown-menu">
-                      <form method="post" action="#" id="customer_login">
-                        <input type="hidden" name="form_type" value="customer_login">
+                      <form method="post" action="#">
                       <div id="bodyBox">
                         <ul class="customer-accounts">
                           <li>
-                            <label for="customer_email_box" class="control-label">Email Address <span class="req">*</span></label>
-                            <input type="email" value="" name="customer[email]" id="customer_email_box" class="form-control">
+                            <label class="control-label">Email Address <span class="req">*</span></label>
+                            <input type="email" value="" name="customer[email]" class="form-control">
                           </li>
                           <li>
-                            <label for="customer_password_box" class="control-label">Password <span class="req">*</span></label>
-                            <input type="password" value="" name="customer[password]" id="customer_password_box" class="form-control password">
+                            <label class="control-label">Password <span class="req">*</span></label>
+                            <input type="password" value="" name="customer[password]" class="form-control">
                           </li>
                           <li><span class="required field">*required field</span></li>
                           <li><button class="btn" type="submit">Login</button></li>
@@ -60,29 +59,27 @@
         <div class="main-header-wrapper">
           <div class="container">
             <div class="row">
-              <div class="logo col-lg-2 col-md-2 col-sm-6 col-xs-12">
+              <div class="logo col-md-2 col-xs-12">
                 <img src="images/logo.png" alt="Logo">
               </div>
-              <div class="search pull-right col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                <div class="search-field">
-                    <div id="search-info" class="search-info">
-                      <form class="search" action="#">  
-                        <input type="text" name="q" class="search_box" placeholder="Search for products" value="">
-                        <input type="image" src="images/icon-search.png" alt="Go" id="go">
-                      </form>
-                    </div>                
-                  </div>
-                  <div id="cart-target" class="toolbar-cart">
-                    <a href="cart.html">
-                      <div class="num-items-in-cart">
-                        <div class="block-cart">
-                          <span class="icon"><span id="topActionCartNumber" class="number">0</span></span>   
-                        </div>
+              <div class="search pull-right col-md-4 col-xs-12">
+                <div class="search-info">
+                  <form class="search" action="#">  
+                    <input type="text" name="q" class="search-box" placeholder="Search for products" value="">
+                    <input type="image" src="images/icon-search.png" alt="Go" id="go">
+                  </form>
+                </div> 
+                <div id="cart-target" class="toolbar-cart">
+                  <a href="cart.html">
+                    <div class="num-items-in-cart">
+                      <div class="block-cart">
+                        <span class="icon"><span id="topActionCartNumber" class="number">0</span></span>   
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
+                </div>
               </div>
-              <div class=" col-md-6 col-sm-12 col-xs-12">
+              <div class="col-md-6 col-xs-12">
                 <nav>
                   <div class="navbar-header">
                     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -148,7 +145,7 @@
           </div>        
         </div>
       </section>
-     <footer id="footer">
+     <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="copyright">
@@ -158,7 +155,7 @@
         </div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
