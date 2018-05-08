@@ -1,0 +1,13 @@
+.page-footer {
+  .container {
+    background: $copyright-bg;
+  }
+  .copyright {
+    color: $white-color;
+    padding: 0 15px;
+    p {
+      margin: 0;
+      padding: 20px 0;
+    }
+  }
+}

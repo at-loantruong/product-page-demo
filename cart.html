@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fashion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="scss/style.css" type="text/css">
+  </head>
+  <body>
+    <header class="page-header">
+      <section class="top-header">
+        <div class="top-header-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="left-area col-md-6">
+                <ul class="head-contact-info">
+                  <li><i class="fa fa-phone-square"></i>+00386 40 000 111</li>
+                  <li><i class="fa fa-envelope"></i>themes@webriti.com</li>
+                </ul>
+              </div>
+              <div class="right-area pull-right col-md-6">
+                <ul class="unstyled">
+                  <li class="login-account">                    
+                    <button id="login-button" class="dropdown-toggle" data-toggle="dropdown">
+                      <i class="fa fa-unlock-alt"></i>                                        
+                      <a href="#" id="customer-login-link">Log in</a>
+                    </button>                    
+                    <div class="dropdown-menu">
+                      <form method="post" action="#">
+                        <div id="body-box">
+                          <ul class="customer-accounts">
+                            <li>
+                              <label class="control-label">Email Address <span class="req">*</span></label>
+                              <input type="email" value="" name="customer[email]" class="form-control">
+                            </li>
+                            <li>
+                              <label class="control-label">Password <span class="req">*</span></label>
+                              <input type="password" value="" name="customer[password]" class="form-control">
+                            </li>
+                            <li><span class="required field">*required field</span></li>
+                            <li><button class="btn" type="submit">Login</button></li>
+                            <li><a class="btn" href="#">Create an account</a></li>
+                          </ul>
+                      </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li><a href="#"><i class="fa fa-key"></i>Register</a></li>  
+                  <li><a href="#"><i class="fa fa-heart"></i>Wishlist</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-header">
+        <div class="main-header-wrapper">
+          <div class="container">
+            <div class="row">
+              <div class="logo col-md-2 col-xs-12">
+                <img src="images/logo.png" alt="Logo">
+              </div>
+              <div class="search pull-right col-md-4 col-xs-12">
+                <div class="search-info">
+                  <form class="search" action="#">  
+                    <input type="text" name="q" class="search-box" placeholder="Search for products" value="">
+                    <input type="image" src="images/icon-search.png" alt="Go" id="go">
+                  </form>
+                </div> 
+                <div id="cart-target" class="toolbar-cart">
+                  <a href="cart.html">
+                    <div class="num-items-in-cart">
+                      <div class="block-cart">
+                        <span class="icon"><span id="cart-number" class="number">0</span></span>   
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6 col-xs-12">
+                <nav>
+                  <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  </div>
+                 <div id="navbarCollapse" class="collapse navbar-collapse">
+                  <ul class="main-menu">
+                    <li class="active"><a href="product.html">Product</a></li>   
+                    <li><a href="#">Collections</a></li>        
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cart-heading">
+        <div class="cart-heading-wrapper">
+          <div class="container">
+            <div class="cart-heading-inner">
+              <h1 class="page-title"><span>Your Cart</span></h1>
+              <div class="breadcrumbs">
+                <span>Home</span></a></span>
+                <span class="arrow-space">&gt;</span>
+                <span><a href="#" title="Your Cart">Your Cart</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="products-block">
+      <div class="container">
+        <div class="list-cart">
+          <table id="table-products">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan='2' class="total-text">Total</td>
+                <td colspan='4' id="total"></td>
+              </tr>
+            </tfoot>
+          </table>
+          <h2 id="empty-cart" class="text-center"></h2>
+          <div class="group-bottom"> 
+            <ul class="cart-buttons">
+              <li><a class="btn btn--primary" href="product.html">Continue Shopping</a></li>
+              <li><a class="btn btn--primary" href="#">Proceed to CheckOut</a></li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+    </section>
+     <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="copyright">
+            <p class="pull-left">Copyright © 2018 - All Rights Reserved - Domain Name</p>
+            <p class="pull-right">Template by Templates</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html
+

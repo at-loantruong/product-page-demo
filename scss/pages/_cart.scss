@@ -1,0 +1,29 @@
+.cart {
+  border: 0;
+  background: transparent;
+  color: $second-color;
+  &:hover {
+  	color: $primary-color ! important;
+  }
+  i {
+  	font-size: 20px;
+  }
+}
+.total-text {
+  text-align: right;
+  background: $total-text-bg;
+}
+.cart-buttons {
+  margin-top: 30px;
+  float: right;
+	li {
+		display: inline-block;
+	}
+}
+.image {
+  width: 45%;
+  img {
+    width: 15%;
+    padding-right: 15px;
+  }
+}

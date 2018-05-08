@@ -1,0 +1,17 @@
+.breadcrumbs {
+  display: inline-block;
+  float: right;
+  line-height: 70px;
+  span {
+    font-weight: 500;
+  }
+}
+.page-title {
+  display: inline-block;
+  float: left;
+  line-height: 70px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
