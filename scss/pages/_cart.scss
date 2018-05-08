@@ -9,13 +9,6 @@
   	font-size: 20px;
   }
 }
-.image {
-  width: 45%;
-	img {
-		width: 15%;
-		padding-right: 15px;
-	}
-}
 .total-text {
   text-align: right;
   background: $total-text-bg;
@@ -26,4 +19,11 @@
 	li {
 		display: inline-block;
 	}
+}
+.image {
+  width: 45%;
+  img {
+    width: 15%;
+    padding-right: 15px;
+  }
 }
