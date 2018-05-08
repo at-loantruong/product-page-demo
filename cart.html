@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="scss/style.css" type="text/css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="scss/style.css" type="text/css">
   </head>
   <body>
     <header class="page-header">
@@ -22,27 +22,27 @@
               </div>
               <div class="right-area pull-right col-md-6">
                 <ul class="unstyled">
-                  <li class="ogin-account">                    
-                    <span id="loginButton" class="dropdown-toggle" data-toggle="dropdown">
+                  <li class="login-account">                    
+                    <button id="login-button" class="dropdown-toggle" data-toggle="dropdown">
                       <i class="fa fa-unlock-alt"></i>                                        
-                      <a href="#" id="customer_login_link">Log in</a>
-                    </span>                    
+                      <a href="#" id="customer-login-link">Log in</a>
+                    </button>                    
                     <div class="dropdown-menu">
                       <form method="post" action="#">
-                      <div id="bodyBox">
-                        <ul class="customer-accounts">
-                          <li>
-                            <label class="control-label">Email Address <span class="req">*</span></label>
-                            <input type="email" value="" name="customer[email]" class="form-control">
-                          </li>
-                          <li>
-                            <label class="control-label">Password <span class="req">*</span></label>
-                            <input type="password" value="" name="customer[password]" class="form-control">
-                          </li>
-                          <li><span class="required field">*required field</span></li>
-                          <li><button class="btn" type="submit">Login</button></li>
-                          <li><a class="btn" href="#">Create an account</a></li>
-                        </ul>
+                        <div id="body-box">
+                          <ul class="customer-accounts">
+                            <li>
+                              <label class="control-label">Email Address <span class="req">*</span></label>
+                              <input type="email" value="" name="customer[email]" class="form-control">
+                            </li>
+                            <li>
+                              <label class="control-label">Password <span class="req">*</span></label>
+                              <input type="password" value="" name="customer[password]" class="form-control">
+                            </li>
+                            <li><span class="required field">*required field</span></li>
+                            <li><button class="btn" type="submit">Login</button></li>
+                            <li><a class="btn" href="#">Create an account</a></li>
+                          </ul>
                       </div>
                       </form>
                     </div>
@@ -73,7 +73,7 @@
                   <a href="cart.html">
                     <div class="num-items-in-cart">
                       <div class="block-cart">
-                        <span class="icon"><span id="topActionCartNumber" class="number">0</span></span>   
+                        <span class="icon"><span id="cart-number" class="number">0</span></span>   
                       </div>
                     </div>
                   </a>
@@ -118,33 +118,40 @@
           </div>
         </div>
       </section>
-      <section class="products-block">
-        <div class="container">
-          <div class="list-cart">
-            <table id="table-products">
-              <thead>
-                <tr>
-                  <th>STT</th>
-                  <th>Product Name</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Total</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-              </tbody>
-            </table>
-            <h2 id="empty-cart" class="text-center"></h2>
-            <div class="group-bottom"> 
-              <ul class="cart-buttons">
-                <li><a class="btn btn--primary" href="product.html">Continue Shopping</a></li>
-                <li><a class="btn btn--primary" href="#">Proceed to CheckOut</a></li>
-              </ul>
-            </div>
-          </div>        
-        </div>
-      </section>
+    </header>
+    <section class="products-block">
+      <div class="container">
+        <div class="list-cart">
+          <table id="table-products">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan='2' class="total-text">Total</td>
+                <td colspan='4' id="total"></td>
+              </tr>
+            </tfoot>
+          </table>
+          <h2 id="empty-cart" class="text-center"></h2>
+          <div class="group-bottom"> 
+            <ul class="cart-buttons">
+              <li><a class="btn btn--primary" href="product.html">Continue Shopping</a></li>
+              <li><a class="btn btn--primary" href="#">Proceed to CheckOut</a></li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+    </section>
      <footer class="page-footer">
       <div class="container">
         <div class="row">
@@ -156,7 +163,7 @@
       </div>
     </footer>
     <script src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html

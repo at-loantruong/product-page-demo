@@ -1,6 +1,7 @@
 .cart {
   border: 0;
   background: transparent;
+  color: $second-color;
   &:hover {
   	color: $primary-color ! important;
   }

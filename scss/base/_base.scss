@@ -8,8 +8,8 @@
 a {
   color: $second-color;
   text-decoration: none ! important;
+  @include link($second-color, $second-color, $primary-color, $primary-color);
 }
-@include link($second-color, $second-color, $primary-color, $primary-color);
 body {
   margin: 0 auto;
   line-height: 20px;
@@ -17,6 +17,7 @@ body {
   color: $second-color;
   font-weight: $base-font-weight;
   background: $background ! important;
+  font-family: $font-family;
 }
 .container {
   @include box-shadow(0px, 0px, 10px, 0, rgba(0,0,0,.2));
