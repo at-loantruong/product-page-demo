@@ -119,3 +119,4 @@ function displayShoppingCartItems() {
     $("#empty-cart").html(htmlString);
   }
 }
+
